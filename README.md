@@ -93,7 +93,7 @@ POST: [http://localhost:3001/users](http://localhost:3001/users)
 * header: { "Content-Type", "application/json" }
 ```bash
   {
-    "username": "dang dev",
+    "username": "dangdev",
     "email": "dangdev@gmail.com",
     "password": "@Xxx1234",
     "password_confirm": "@Xxx1234"
