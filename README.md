@@ -101,7 +101,7 @@ POST: [http://localhost:3001/users](http://localhost:3001/users)
 ```
 
 ระบบล็อกอิน
-POST: [http://localhost:3001/users](http://localhost:3001/users)
+POST: [http://localhost:3001/auth/login](http://localhost:3001/auth/login)
 * header: { "Content-Type", "application/json" }
 ```bash
   {
@@ -109,6 +109,11 @@ POST: [http://localhost:3001/users](http://localhost:3001/users)
     "password": "@Xxx1234"
   }
 ```
+
+ออกจากระบบ
+GET:[http://localhost:3001/auth/logout](http://localhost:3001/auth/logout)
+* Authorization Bearer token is Required
+* header: { "Content-Type", "application/json" }
 
 แสดงผลข้อมูลตัวเอง
 GET: [http://localhost:3001/users](http://localhost:3001/users/me)
