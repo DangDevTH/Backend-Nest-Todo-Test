@@ -2,11 +2,10 @@ import { GenerateTokensProvider } from './generate-tokens.provider';
 import { HashingProvider } from 'src/auth/providers/hashing.provider';
 import { UsersService } from './../../users/providers/users.service';
 import {
-    BadRequestException,
+  BadRequestException,
   forwardRef,
   Inject,
   Injectable,
-  NotFoundException,
   RequestTimeoutException,
   UnauthorizedException,
 } from '@nestjs/common';
@@ -41,7 +40,7 @@ export class LoginProvider {
     }
 
     if(!user) {
-        throw new NotFoundException('ไม่พบอีเมลนี้');
+        throw new BadRequestException('ไม่พบอีเมลนี้');
     }
 
     try {
